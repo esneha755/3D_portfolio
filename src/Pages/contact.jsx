@@ -2,7 +2,7 @@
 import emailjs from '@emailjs/browser';
 import { Canvas } from '@react-three/fiber';
 import Loader from '../components/Loader';
-import Fox from '../models/fox';
+import Fox from '../models/Fox';
 import Alert from '../components/Alert';
 import useAlert from '../hooks/useAlert';
 

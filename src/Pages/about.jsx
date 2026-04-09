@@ -8,7 +8,7 @@ import "react-vertical-timeline-component/style.min.css";
 import React from 'react'
 import { skills , experiences} from '../constants'
 import CTA from "../components/CTA";
-import Footer from "../components/footer";
+import Footer from "../components/Footer";
 const About = () => {
 
     return (
