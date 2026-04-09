@@ -14,13 +14,23 @@ const Footer = () => {
 
         <div className='flex gap-3 justify-center items-center'>
           {socialLinks.map((link) => (
-            <Link key={link.name} to={link.link} target='_blank'>
-              <img
-                src={link.iconUrl}
-                alt={link.name}
-                className='w-6 h-6 object-contain'
-              />
-            </Link>
+            link.link.startsWith('/') ? (
+              <Link key={link.name} to={link.link}>
+                <img
+                  src={link.iconUrl}
+                  alt={link.name}
+                  className='w-6 h-6 object-contain'
+                />
+              </Link>
+            ) : (
+              <a key={link.name} href={link.link} target='_blank' rel='noopener noreferrer'>
+                <img
+                  src={link.iconUrl}
+                  alt={link.name}
+                  className='w-6 h-6 object-contain'
+                />
+              </a>
+            )
           ))}
         </div>
       </div>
